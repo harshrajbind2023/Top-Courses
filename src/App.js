@@ -18,7 +18,8 @@ const App = () => {
     try{
       let response = await fetch(apiUrl);
       let output = await response.json();
-      ///output -> 
+     
+      
       setCourses(output.data);
     }
     catch(error) {
@@ -57,6 +58,7 @@ const App = () => {
           {/* {
             loading ? (<Spinner/>) : (<Cards courses={courses} category={category}/>)
           } */}
+          
         </div>
       </div>
 
